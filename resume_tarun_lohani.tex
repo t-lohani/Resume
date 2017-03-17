@@ -1,0 +1,188 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{verbatim}  % to use comment line \begin{comment} \end{comment}
+\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.0in]{geometry} % Document margins
+\usepackage{hyperref} % For Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=cyan,      
+    urlcolor=blue
+}
+\urlstyle{same}
+
+\renewcommand{\baselinestretch}{1.0}
+\name{Tarun Lohani} % Your name
+\address{700 Health Sciences Drive, Chapin G 2103A, Stony Brook, New York 11790} % Your address
+\address{
+(631)~$\cdot$~652~$\cdot$~5063 \\
+\href{mailto:tlohani@cs.stonybrook.edu}{tlohani@cs.stonybrook.edu}\\       
+\href{http://www.linkedin.com/in/tarunnitjsr}{www.linkedin.com/in/tarunnitjsr}\\  
+\href{https://github.com/t-lohani}{www.github.com/t-lohani}
+} 
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}
+{Stony Brook University $\bullet$ New York, U.S.A.} {\emph{Aug 2016 -- Dec 2017} }
+{Master of Science, Computer Science } {} 
+Courses: Analysis of Algorithms, Operating Systems, Principles of Database Systems, Probability and Statistics for Data Scientists, Visualization, Computational Biology, Wireless and Mobile Networks.
+\end{rSubsection}
+
+\begin{rSubsection}
+{National Institute of Technology, Jamshedpur $\bullet$ Jamshedpur, India} {\emph{Aug 2008 -- May 2012}}{Bachelor of Technology, Electronics and Communications} {} 
+\item[] 
+%{{Thesis: \href{http://sci-edit.net/journal/index.php/cgt/article/download/40/35}{Fama French Three Factor Model in Indian Stock Market} }}  \\
+%{{Research Publication: \href{http://www.iosrjournals.org/iosr-jbm/papers/vol2-issue1/A0210104.pdf?id=5531}{Analysis of Equity Based Mutual Funds in India} }} \\
+Courses: Programming and Data Structures, Computer Communication and Networking, Computer Organization and Microprocessors, Embedded Systems and Control, Software Engineering.
+
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Java, C, Python, SQL.
+\\
+Web Technologies & HTML5, JavaScript, CSS, XML, JSON, REST API Web services, JSF.
+\\
+Databases & MySQL, SQLite.
+\\
+Tools & Android Studio, Eclipse, Tizen Studio, SVN, Perforce, Git, Kony.
+\end{tabular}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Samsung Research India}{\emph{ Jul 2014 -- Aug 2016}}{Senior Software Engineer}{Bangalore, India}
+\item Android Platform Team - Implemented {\emph{Universal Switch}}, {\emph{Galaxy Talkback}} and {\emph{Direction Unlock}}, some salient Accessibility features for physically challenged people in Galaxy S6 model, which required both Application and Framework level changes. Direction unlock was selected as {\emph{Most innovative accessibility feature}} of the year.
+\item \href{https://play.google.com/store/apps/details?id=com.sec.android.app.shealth&hl=en}{S-Health} application -- Implemented major features such as Exercise intensity and calorie profiling charts, {\emph{Workout Replay}} and sharing feature using Google maps, {\emph{Air View}} support in sports module.
+\item Strength Training - Developed a Tizen web app for Galaxy Gear S2 watch which detects repetition counts for exercises like "Pushups", "Situps", "Chestfly" and "Squats", employing Machine learning techniques.
+\item My Gear My Style - Developed a highly customizable watch face comprised of Tizen web app for Gear S2 and its counterpart \href{https://play.google.com/store/apps/details?id=com.samsung.mygearmystyle&hl=en}{Android app}. The companion app won 2nd prize in Samsung conducted {\emph{Tizen app challenge}}.
+%\item Worked for {\emph{Timeline share}} app which tracks the movement of users during a journey and prepares a timeline which could be shared on social networking sites. Implemented the feature to filter out similar photos.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Kony Labs} {\emph{Sep 2012 -- Jul 2014}} {Software Engineer}
+{Hyderabad, India}
+\item Medical Mutual of Ohio -- Developed ID card module of the Android \href{https://play.google.com/store/apps/details?id=com.medmutual.mhp&hl=en} {application}, implementing functionality to manage user profile, view ID card and other descriptions like insurance period, claims and offers.
+\item OTIS Field Application -- As owner of Job management module, implemented job status change, display jobs on map, search/sort/forward a job and sync all the changes to enterprise database using Kony Sync Framework.
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Projects SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+
+
+%----------------------------------------------------------------------------------------
+% Per process system call hw3 OS
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Per process system call Vector Table} {\emph {Nov 2016 -- Dec 2016}}{}{}
+\item Implemented a per-process system call vector support for Linux kernel. An existing or a custom system call can be registered to a vector table and process can use any one of these vectors. New version of clone system call was added so that a child process has option to choose its vector while cloning.
+{\tiny$\bullet$}
+\href{https://github.com/t-lohani/Per-process-system-call}{GitHub Link}
+\end{rSubsection}
+
+%----------------------------------------------------------------------------------------
+% TRFS Filesystem hw2 OS
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{TRFS Stackable Filesystem}{\emph{Oct 2016 - Nov 2016}}{}{}
+\item Developed a stackable filesystem for Linux kernel which has capability to intercept and log all the file operations and replay them to validate the trace. Modifications were done on top of Wrapfs filesystem.
+{\tiny$\bullet$}
+\href{https://github.com/t-lohani/TRFS-Stackable-Filesystem}{GitHub Link}
+\end{rSubsection}
+
+%----------------------------------------------------------------------------------------
+% Xmergesort hw1 OS
+%----------------------------------------------------------------------------------------
+
+%\begin{rSubsection}{Xmergesort System Call} {\emph {Sep 2016 - Oct 2016}}{}{}
+%\item Developed a system call for Linux which takes two sorted input text files and merges them to generate a single sorted output file.
+%{\tiny$\bullet$}     
+%\href{https://github.com/t-lohani/Xmergesort-System-Call}{GitHub Link}
+%\end{rSubsection}
+
+%----------------------------------------------------------------------------------------
+% Suffix Array Computaional Biology
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Alternative memory layouts for suffix array} {\emph {Sep 2016 -- Dec 2016}}{}{}
+\item Implemented Btree and Eytzinger memory layouts for vanilla suffix array to improve performance in terms of time and memory for pattern searches in huge texts.
+{\tiny$\bullet$}
+\href{https://github.com/t-lohani/Suffixarray-Layout}{GitHub Link} 
+\end{rSubsection}
+
+
+%----------------------------------------------------------------------------------------
+% Infrastructure side positioning of cellular band devices - Wireless
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{Infrastructure side positioning of cellular band devices}{\emph{Sep 2016 -- Dec 2016}}{}{}
+\item Developed a model to localize cellular devices for a network operator using supervised and unsupervised machine learning techniques based on signal measurements of different mobile towers.
+{\tiny$\bullet$}
+\href{https://github.com/t-lohani/Netwok-side-Localization}{GitHub Link}
+\end{rSubsection}
+
+%----------------------------------------------------------------------------------------
+% FaceMashPlus
+%----------------------------------------------------------------------------------------
+
+\begin{rSubsection}{FaceMashPlus}{\emph{Oct 2016 -- Dec 2016}}{}{}
+\item Designed a relational database system to support the operations of a social networking as well as e-commerce website. Designed basic user interface of the website using JSF.
+{\tiny$\bullet$}
+\href{https://github.com/t-lohani/Facemash-Plus}{GitHub Link}
+\end{rSubsection}
+
+\end{rSection}
+
+\end{document}
