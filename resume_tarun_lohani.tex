@@ -17,12 +17,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
 \usepackage{verbatim}  % to use comment line \begin{comment} \end{comment}
-\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.0in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.3in,right=0.75in,bottom=0.3in]{geometry} % Document margins
 \usepackage{hyperref} % For Hyperlinks
 \hypersetup{
     colorlinks=true,
@@ -32,20 +32,20 @@
 }
 \urlstyle{same}
 
-\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\baselinestretch}{1.2}
 \name{Tarun Lohani} % Your name
-\address{700 Health Sciences Drive, Chapin F 2088B, Stony Brook, New York 11790} % Your address
+\address{1832 Silk Wood Ln, San Jose, California 95131} % Your address
 \address{
-631-652-5063 $\bullet$ \href{mailto:tlohani@cs.stonybrook.edu}{tlohani@cs.stonybrook.edu} $\bullet$      
+408-300-3794 $\bullet$ \href{mailto:t.lohani@gmail.com}{t.lohani@gmail.com} $\bullet$      
 \href{http://www.linkedin.com/in/tarunnitjsr}{www.linkedin.com/in/tarunnitjsr} $\bullet$  
 \href{https://github.com/t-lohani}{www.github.com/t-lohani}
-} 
+}
 
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%    EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
@@ -53,13 +53,13 @@
 \begin{rSubsection}
 {Stony Brook University $\bullet$ New York, U.S.A.} {\emph{Aug 2016 -- Dec 2017}}
 {Master of Science, Computer Science }
-{CGPA - 3.58/4.0} 
+{CGPA - 3.55/4.0}
 Courses: Analysis of Algorithms, Operating Systems, Artificial Intelligence, Probability and Statistics for Data Scientists, Visualization, Principles of Database Systems, Computational Biology, Wireless and Mobile Networks, Theory of Computation, Principles of Programming Languages.
 \end{rSubsection}
 
 \begin{rSubsection}
-{National Institute of Technology, Jamshedpur $\bullet$ Jamshedpur, India} {\emph{Aug 2008 -- May 2012}}{Bachelor of Technology, Electronics and Communications}
-{CGPA - 8.53/10.0} 
+{National Institute of Technology, Jamshedpur $\bullet$ Jharkhand, India} {\emph{Aug 2008 -- May 2012}}{Bachelor of Technology, Electronics and Communications}
+{CGPA - 8.53/10.0}
 \item[]
 Courses: Programming and Data Structures, Computer Communication and Networking, Computer Organization and Microprocessors, Embedded Systems and Control, Software Engineering.
 
@@ -68,42 +68,59 @@ Courses: Programming and Data Structures, Computer Communication and Networking,
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%    TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Java, C, JavaScript, Python, Prolog, SML.
+Languages & GoLang, Java, JavaScript, Python.
 \\
-Web Technologies & NodeJS, HTML5, CSS, Pyhton Flask, RESTful API, SOAP, AWS, D3.
+Web Technologies & NodeJS, HTML5, CSS, Pyhton Flask, RESTful API, SOAP, D3.
 \\
-Databases & MySQL, MongoDB, SQLite.
+Databases & Postgres, MySQL, MongoDB, SQLite, ZooKeeper.
 \\
-Tools & Android Studio, Eclipse, IntelliJ, SVN, Perforce, Git, Swagger.
+Tools & GoLand, VSCode, Android Studio, Eclipse, IntelliJ, Git, Swagger.
+\\
+Google Cloud & App/Compute Engine, Firestore/Datastore, Pub-Sub, Stackdriver, Storage,
+\\
+ & Cloud functions, BigQuery, Cloud Scheduler, Dataflow
 \end{tabular}
 
 \end{rSection}
 
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+%    WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Work Experience}
 
 %------------------------------------------------
 
-\begin{rSubsection}{Google}{\emph{May 2017 -- Aug 2017}}{Software Engineering Intern}{Mountain View, CA}
+\begin{rSubsection}{PayPal Inc.}{\emph{Feb 2018 -- Present}}{Software Engineer 2}{San Jose, CA}
+\item Teaserv - Worked on PayPal's next generation infrastructure platform. Developed CLI and gRPC/REST micro-services, to provide Infrastructure as a Service leveraging GCP and PayPal's internal container
+platform "Genesis". This effort brought down the consumption of GCP cores by 70\%.
+
+\item Release Checklist - Developed release recommendation engine to validate candidate manifests and allow or block them based on their risk score.
+Integrated with multiple downstream systems to get the result and expose them with gRPC as well as REST endpoints for front-end integration. On-boarded PayPal subsidiaries - Venmo, Braintree and Simility on this system.
+
+\item URP - Working on Geo-China module of the project to provide capabilities of keeping GoPay, a subsidiary company in China, in sync with North America releases.
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Google Inc.}{\emph{May 2017 -- Aug 2017}}{Software Engineering Intern}{Mountain View, CA}
 \item ChromeOS Team - Worked for "Toolkit Improvements in Large Screen Devices". Implemented new features in Android application framework and ARC++ to support mouse, hover and drag gestures.
 \end{rSubsection}
 
 %------------------------------------------------
 
 \begin{rSubsection}{Samsung Research India}{\emph{Jul 2014 -- Aug 2016}}{Senior Software Engineer}{Bangalore, India}
-\item Platform Team - Implemented {\emph{Universal Switch}}, {\emph{Galaxy Talkback}} and {\emph{Direction Unlock}}, some salient accessibility features for physically challenged people in Galaxy devices, which required both application and framework layer changes. Direction unlock was selected as {\emph{Most innovative accessibility feature}} of the year.
+\item Platform Team - Implemented {\emph{Universal Switch}}, {\emph{Galaxy Talk back}} and {\emph{Direction Unlock}}, some salient accessibility features for physically challenged people in Galaxy devices, which required both application and framework layer changes. Direction unlock was selected as {\emph{Most innovative accessibility feature}} of the year.
 \item S-Health Sports -- Implemented major features such as Exercise intensity and calorie profiling charts, {\emph{Workout Replay and sharing}} feature using Google maps and {\emph{Air View}} support in \href{https://play.google.com/store/apps/details?id=com.sec.android.app.shealth&hl=en}{S-Health} application (sports module).
-\item Strength Training - Developed a Tizen web app for Galaxy Gear S2 watch which detects repetition counts for exercises like "Pushups", "Situps", "Chestfly" and "Squats", employing machine learning techniques.
+\item Strength Training - Developed a Tizen web app for Galaxy Gear S2 watch which detects repetition counts for exercises like "Push-ups", "Sit-ups", "Chest-fly" and "Squats", employing machine learning techniques.
 \item My Gear My Style - Developed a highly customizable watch face comprised of Tizen web app for Gear S2 and its counterpart \href{https://play.google.com/store/apps/details?id=com.samsung.mygearmystyle&hl=en}{Mobile app}. The companion app won 2nd prize in Samsung conducted {\emph{Tizen app challenge}}.
 %\item Worked for {\emph{Timeline share}} app which tracks the movement of users during a journey and prepares a timeline which could be shared on social networking sites. Implemented the feature to filter out similar photos.
 \end{rSubsection}
@@ -113,8 +130,8 @@ Tools & Android Studio, Eclipse, IntelliJ, SVN, Perforce, Git, Swagger.
 \begin{rSubsection}{Kony Labs} {\emph{Sep 2012 -- Jul 2014}} {Software Engineer}
 {Hyderabad, India}
 \item Medical Mutual of Ohio -- Developed ID card module of the \href{https://play.google.com/store/apps/details?id=com.medmutual.mhp&hl=en} {application}, implementing functionality to manage user profile, view ID card and other descriptions like insurance period, claims and offers.
-\item OTIS Field Application -- As owner of Job management module of tablet application, implemented job status change, display jobs on map, search/sort/forward a job, order parts consuming SOAP services provided by the client. Implemented changes sync to enterprise database using Kony Sync Framework.
-
+\item OTIS Application -- As owner of Job management module, implemented job status change, displaying jobs on map, search/sort/forward a job, order parts and sync to enterprise DB consuming SOAP services.
+\newline
 \end{rSubsection}
 
 %------------------------------------------------
@@ -154,16 +171,14 @@ Youtube Link : \href{https://youtu.be/wKYCvjxeDAU}{https://youtu.be/wKYCvjxeDAU}
 \item Implemented a per-process system call vector support for Linux kernel. An existing or a custom system call can be registered to a vector table and process can use any one of these vectors. New version of clone system call was added so that a child process has option to choose its vector while cloning.
 {\tiny$\bullet$}
 \href{https://github.com/t-lohani/Per-process-system-call}{GitHub Link}
-\newline
-\newline\newline\newline
 \end{rSubsection}
 
 %----------------------------------------------------------------------------------------
 % TRFS Filesystem hw2 OS
 %----------------------------------------------------------------------------------------
 
-\begin{rSubsection}{TRFS Stackable Filesystem}{\emph{Oct 2016 - Nov 2016}}{}{}
-\item Developed a stackable filesystem for Linux kernel which has capability to intercept and log all the file operations and replay them to validate the trace. Modifications were done on top of Wrapfs filesystem.
+\begin{rSubsection}{TRFS Stack-able File-system}{\emph{Oct 2016 - Nov 2016}}{}{}
+\item Developed a stack-able file-system for Linux kernel which has capability to intercept and log all the file operations and replay them to validate the trace. Modifications were done on top of Wrapfs file-system.
 {\tiny$\bullet$}
 \href{https://github.com/t-lohani/TRFS-Stackable-Filesystem}{GitHub Link}
 \end{rSubsection}
@@ -174,18 +189,18 @@ Youtube Link : \href{https://youtu.be/wKYCvjxeDAU}{https://youtu.be/wKYCvjxeDAU}
 
 \begin{rSubsection}{Xmergesort System Call} {\emph {Sep 2016 - Oct 2016}}{}{}
 \item Developed a system call for Linux which takes two sorted input text files and merges them to generate a single sorted output file.
-{\tiny$\bullet$}     
+{\tiny$\bullet$}	 
 \href{https://github.com/t-lohani/Xmergesort-System-Call}{GitHub Link}
 \end{rSubsection}
 
 %----------------------------------------------------------------------------------------
-% Suffix Array Computaional Biology
+% Suffix Array Computational Biology
 %----------------------------------------------------------------------------------------
 
 \begin{rSubsection}{Alternative memory layouts for suffix array} {\emph {Sep 2016 -- Dec 2016}}{}{}
-\item Implemented Btree and Eytzinger memory layouts for vanilla suffix array to improve performance in terms of time and memory for pattern searches in huge texts.
+\item Implemented B-Tree and Eytzinger memory layouts for vanilla suffix array to improve performance in terms of time and memory for pattern searches in huge texts.
 {\tiny$\bullet$}
-\href{https://github.com/t-lohani/Suffixarray-Layout}{GitHub Link} 
+\href{https://github.com/t-lohani/Suffixarray-Layout}{GitHub Link}
 \end{rSubsection}
 
 
@@ -211,4 +226,7 @@ Youtube Link : \href{https://youtu.be/wKYCvjxeDAU}{https://youtu.be/wKYCvjxeDAU}
 
 \end{rSection}
 
+
 \end{document}
+
+
